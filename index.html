@@ -12,21 +12,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBbmfKlPHG-SnZZLvmlqZiQcBGFf4pCLgc",
-    authDomain: "montelabella-project.firebaseapp.com",
-    databaseURL: "https://montelabella-project.firebaseio.com",
-    projectId: "montelabella-project",
-    storageBucket: "montelabella-project.appspot.com",
-    messagingSenderId: "354671077570"
-  };
-  firebase.initializeApp(config);
-</script>
+
 
 <body>
     <div class="container">
@@ -75,19 +63,19 @@
                         <div class="form-group">
                             <label for="name">Train Name</label>
                             <input type="text" class="form-control" id=
-                            "nameInput" placeholder="Kansas Train"></div>
+                            "trainNameInput" placeholder="Kansas Train"></div>
                         <div class="form-group">
-                            <label for="dest">Destination</labe>
+                            <label for="dest">Destination</label>
                             <input type="text" class="form-control" id=
                             "destInput" placeholder="Kansas"></div>
                         <div class="form-group">
                             <label class="nextTrain" for="nextTrain">Train Time</label>
                             <label class="milTime">&nbsp;(HH:mm - Military)</label>
-                            <input type class="form-contol" id="timeInput" placeholder="00:00"></div>
+                            <input type class="form-contol" id="firstTrainInput"placeholder="00:00"></div>
                         <div class="form-group">
                             <label for="minsAway">Frequency - (min) </label>
                             <input type="text" class="form-control" id="freqInput" placeholder="15"></div>
-                            <button type="submit" class="btn btn-default" id="submit">Add Train</button>
+                            <button type="submit" class="btn btn-default" id="addTrainBtn">Add Train</button>
                             <button type="submit" class="btn btn-default" id="removeTrain">Remove</button>
                         </form>
                         </div>
@@ -102,6 +90,9 @@
         </div>
     </div>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
 <script src="assets/javascript/javascript.js"></script>
 </body>
 

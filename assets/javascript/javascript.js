@@ -12,11 +12,12 @@
   firebase.initializeApp(config);
   var database = firebase.database();
   //Grabs users input
-  $("#addTrainBtn").on("click",function(){
-      var trainName = $("trainNameInput").val().trim();
-      var destination = $("destInput").val().trim();
-      var firstTrain = $("firstTrainInput").val().trim();
-      var frequency = $("freqInput").val().trim();
+  $("#addTrainBtn").on("click",function(event){
+      event.preventDefault();
+      var trainName = $("#trainNameInput").val().trim();
+      var destination = $("#destInput").val().trim();
+      var firstTrain = $("#firstTrainInput").val().trim();
+      var frequency = $("#freqInput").val().trim();
 
   //holds train data
   var newTrain = {
@@ -27,6 +28,10 @@
   }  
   //uploads data to database
   database.ref().push(newTrain);
+  console.log(newTrain.name);
+  console.log(newTrain.dest);
+  console.log(newTrain.first);
+  console.log(newTrain.freq);
   
   //clears text boxes
   $("#trainNameInput").val("");
