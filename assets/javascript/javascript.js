@@ -50,12 +50,14 @@
     var destination = childSnapshot.val().dest;
     var firstTrain = childSnapshot.val().first;
     var frequency = childSnapshot.val().freq;
+    var currentTime = childSnapshot.val().time;
 
     //Train Data
     console.log(trainName);
     console.log(destination);
     console.log(firstTrain);
     console.log(frequency);
+    console.log(currentTime);
 
     //time (this code was given to me by tutor)
     var firstTimeConverted = moment(firstTrain, "hh:mm").subtract(1,"years");
