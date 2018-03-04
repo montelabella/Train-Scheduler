@@ -1,6 +1,6 @@
 body {
-    background-image: url(../images/train.jpg);
-    opacity: 0.7;
+    background-image: url(../images/rail.jpg);
+    opacity: 0.6;
     background-color: rgba(0, 255, 188, 0.5);
     background-position: center ;
     background-image: no-repeat;
@@ -14,5 +14,11 @@ body {
 }
 .col-md-3 {
     float: right;
+}
+#addTrainBtn {
+    background-image: url(../images/ticket.jpg);
+}
+#removeTrain {
+    background-image: url(../images/ticket2.jpg);
 }
   

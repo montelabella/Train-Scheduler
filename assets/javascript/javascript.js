@@ -18,6 +18,7 @@
       var destination = $("#destInput").val().trim();
       var firstTrain = $("#firstTrainInput").val().trim();
       var frequency = $("#freqInput").val().trim();
+      
 
   //holds train data
   var newTrain = {
