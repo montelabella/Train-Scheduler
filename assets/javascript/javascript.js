@@ -63,7 +63,7 @@
 
     //current time
     var currentTime = moment();
-    console.log("CURRENT IME:" + moment(currentTime).format("HH:mm"));
+    console.log("CURRENT TIME:" + moment(currentTime).format("hh:mm"));
 
     //difference in times
     var diffTime = moment().diff(moment(firstTimeConverted),"minutes");

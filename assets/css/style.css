@@ -1,3 +1,16 @@
 body {
-    background-image: url(assets/images/train-railway.jpg);
+    background-image: url(../images/train.jpg);
+    background-color: rgba(0, 255, 188, 0.5);
+    background-position: center ;
+    background-image: no-repeat;
+    background-size: cover;
+   
+  }
+#trainTable {
+    background: whitesmoke;
 }
+.container {
+	height: auto;
+	width: 100%;
+}
+  
